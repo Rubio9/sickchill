@@ -2061,13 +2061,16 @@ class TVEpisode(object):
         def dot(name):
             # assert isinstance(name, unicode), f'{name} is not unicode'
             # re.sub str . was any char (messy) and sanitizer wouldn't allow brackets to remain without other issues.
-            swap_chars = " -_"
+            swap_chars = " -_/"
             for x in swap_chars:
                 name = name.replace(x, ".")
             return name
 
         def us(name):
-            return re.sub("[ -]", "_", name)
+            return re.sub("[ -/]", "_", name)
+
+        def clean(name):
+            return re.sub("\.\.*", ".", re.sub("[]!@#$%^*(){}|\\;:'\"<>,?[]", "", re.sub("&", "and", name)))
 
         def release_name(name):
             if name:
@@ -2146,12 +2149,18 @@ class TVEpisode(object):
             "%SN": show_name,
             "%S.N": dot(show_name),
             "%S_N": us(show_name),
+            "%CSN": clean(show_name),
+            "%CS.N": clean(dot(show_name)),
+            "%CS_N": clean(us(show_name)),
             "%SNY": show_start_year,
             "%S.N.Y": dot(show_start_year),
             "%S_N_Y": us(show_start_year),
             "%EN": ep_name,
             "%E.N": dot(ep_name),
             "%E_N": us(ep_name),
+            "%CEN": clean(ep_name),
+            "%CE.N": clean(dot(ep_name)),
+            "%CE_N": clean(us(ep_name)),
             "%QN": Quality.qualityStrings[epQual],
             "%Q.N": dot(Quality.qualityStrings[epQual]),
             "%Q_N": us(Quality.qualityStrings[epQual]),

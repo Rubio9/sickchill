@@ -552,73 +552,103 @@
                                             </tr>
                                             <tr class="even">
                                                 <td>&nbsp;</td>
+                                                <td>%CSN</td>
+                                                <td>${_('Clean Show Name')}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>%CS.N</td>
+                                                <td>${_('Clean.Show.Name')}</td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td>&nbsp;</td>
+                                                <td>%CS_N</td>
+                                                <td>${_('Clean_Show_Name')}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
                                                 <td>%SNY</td>
                                                 <td>${_('Show Name ShowYear - Overrides Strip Show Year selector')}</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="even">
                                                 <td>&nbsp;</td>
                                                 <td>%S.N.Y</td>
                                                 <td>${_('Show.Name.ShowYear')}</td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr>
                                                 <td>&nbsp;</td>
                                                 <td>%S_N_Y</td>
                                                 <td>${_('Show_Name_ShowYear')}</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="even">
                                                 <td class="align-right"><b>${_('Season Number')}:</b></td>
                                                 <td>%S</td>
                                                 <td>2</td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr>
                                                 <td>&nbsp;</td>
                                                 <td>%0S</td>
                                                 <td>02</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="even">
                                                 <td class="align-right"><b>${_('XEM Season Number')}:</b></td>
                                                 <td>%XS</td>
                                                 <td>2</td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr>
                                                 <td>&nbsp;</td>
                                                 <td>%0XS</td>
                                                 <td>02</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="even">
                                                 <td class="align-right"><b>${_('Episode Number')}:</b></td>
                                                 <td>%E</td>
                                                 <td>3</td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr>
                                                 <td>&nbsp;</td>
                                                 <td>%0E</td>
                                                 <td>03</td>
-                                            </tr class="even">
-                                            <tr>
+                                            </tr>
+                                            <tr class="even">
                                                 <td class="align-right"><b>${_('XEM Episode Number')}:</b></td>
                                                 <td>%XE</td>
                                                 <td>3</td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr>
                                                 <td>&nbsp;</td>
                                                 <td>%0XE</td>
                                                 <td>03</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="even">
                                                 <td class="align-right"><b>${_('Episode Name')}:</b></td>
                                                 <td>%EN</td>
                                                 <td>${_('Episode Name')}</td>
                                             </tr>
-                                            <tr class="even">
+                                            <tr>
                                                 <td>&nbsp;</td>
                                                 <td>%E.N</td>
                                                 <td>${_('Episode.Name')}</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="even">
                                                 <td>&nbsp;</td>
                                                 <td>%E_N</td>
                                                 <td>${_('Episode_Name')}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>%CEN</td>
+                                                <td>${_('Clean Episode Name')}</td>
+                                            </tr>
+                                            <tr class="even">
+                                                <td>&nbsp;</td>
+                                                <td>%CE.N</td>
+                                                <td>${_('Clean.Episode.Name')}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td>%CE_N</td>
+                                                <td>${_('Clean_Episode_Name')}</td>
                                             </tr>
                                             <tr class="even">
                                                 <td class="align-right"><b>${_('Air Date')}:</b></td>
